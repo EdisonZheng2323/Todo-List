@@ -1,160 +1,125 @@
 html, body {
-  background-color: gray;
+  background-color: white;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
   overflow: auto;
 }
 
-nav, header {
-  display: flex; 
-  justify-content: center;
-  gap: 0.5rem;
-  height: 50px;
-  width: 100%;
-}
-
-#content {
-  background-color: red;
-  height: 100%;
-  width: 60%;
+header, footer {
+  text-align: center;
   display: flex;
+  background-color: palevioletred;
   justify-content: center;
-  overflow: auto;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+header{
+  font-size: 3.5rem;
+}
+
+.content {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  min-width: 150px;
+  background-color: lightgray;
+  text-align: left;
+  padding: 20px;
 }
 
 button {
-  height: 100%;
-  background-color: red;
   border: none;
-  border-bottom: 0px;
-  
+  background-color: lightgray;
   font-weight: bold;
-  
+  text-align: left;
+  padding: 10px 20px 10px 20px;
+  font-size: 1rem;
 }
 
-.home {
-  display: grid;
-  grid-template-rows: 0.3fr 1fr 1fr 0.3fr;  
-  text-align: center;
-  grid-template: 1fr;
-  
-}
-
- #hours {
-  background-color: rgba(205, 46, 46, 0.678);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80%;
-  width: 60%;
-  align-self: center;
-  justify-self: center;
-  border: 2px solid gray;
-  line-height: 1.3;
-}
-
-#description {
-  background-color: rgba(205, 46, 46, 0.678);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70%;
-  width: 50%;
-  align-self: center;
-  justify-self: center;
-  border: 2px solid gray;
-  padding: 30px;
-  line-height: 1.8;
+button:hover{
+  background-color: gray;
 }
 
 h1 {
-  background-color: rgba(205, 46, 46, 0.678);
+  font-size: 2rem;
+}
+.dialog_header{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  justify-self: center;
-  border: 2px solid gray;
-  width: 70%;
-  height: 60%;
+  flex-direction: row; 
+  align-items: flex-start;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-between;
 }
 
-#location {
-  background-color: rgba(205, 46, 46, 0.678);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  width: 60%;
-  height: 60%;
-  justify-self: center;
-  border: 2px solid gray;
+
+.close{
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  text-align: center;
+  background-color: white;
 }
 
-.menuHeader{
-  height: 5%;
-  width: 50%;
-
+.dialog_h1{
+  margin: 0px;
 }
 
-h2 {
-  background-color: rgba(205, 46, 46, 0.678);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  width: 25%;
-  height: 5%;
-  justify-self: center;
-  border: 2px solid gray;
+dialog {
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  gap: 20px;
+  
 }
 
-.item {
-  background-color: rgba(205, 46, 46, 0.678);
+form{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20%;
-  width: 50%;
-  align-self: center;
-  justify-self: center;
-  border: 2px solid gray;
-  padding: 15px;
-  line-height: 1.8;
-  margin-bottom: 20px;
   flex-direction: column;
-  overflow: visible;
 }
 
-p {
+.addProject {
+  width: 130px;
+  margin-top: 30px;
+  border-radius: 10px;
   text-align: center;
 }
 
-.contact {
-  width: 70%;
-  height: 30%;
-
+.buttons{
+  display: flex;
+  justify-content: end;
 }
 
-.person {
-  background-color: rgba(205, 46, 46, 0.678);
+.main-content{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40%;
-  width: 60%;
-  align-self: center;
-  justify-self: center;
-  border: 2px solid gray;
-  padding: 8px;
-  margin-bottom: 20px;
   flex-direction: column;
-  overflow: visible;
-  line-height: 1.5;
-  font-weight: bold;
+  padding: 20px;
+  width: 100%;
+}
+.addTaskButton {
+  background-color: white;
+  display: flex;
+}
+
+.dialog2 input {
+  margin-bottom: 8px;
+}
+
+#submitTask {
+  display: flex;
+  background-color: whi;
 }
