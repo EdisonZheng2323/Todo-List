@@ -20,23 +20,23 @@
       </button>
     </nav>
     <div class = "main-content">
-
+      
     </div>
   </div>
   <footer>
     <div class = "footer"> Copyright © 2024 Edison Zheng</div>
   </footer>
   <dialog class = "dialog" hidden>
-    <div class="dialog_header">
-      <h1 class = "dialog_h1"> Create a New Project </h1>
-      <button class = "close"> X </button>
-    </div>
     <form method = "dialog" class = "form">
-      <label for = "name">
-        Name:
-      </label>
-      <input type = "text" id = "name" name = "project_name" required>
-      <div class="buttons"><button type = "submit" class = "addProject"> Add Project </button></div>
+      <div class="dialog_header">
+        <h1 class = "dialog_h1"> Create a New Project </h1>
+        <button class = "close"> X </button>
+      </div>
+        <div class="answer">
+          <label for = "name"> Name: </label>
+          <input type = "text" id = "name" name = "project_name" required>
+        </div>
+        <div class="buttons"><button class = "addProject" type = "submit"> Add Project </button></div>
     </form>
   </dialog>
   <dialog class = "dialog2" hidden>
@@ -53,7 +53,8 @@
         <option value = "medium"> Medium </option>
         <option value = "high"> High </option>
       </select>
-      <div class="buttons"><button type = "submit" class = "addTask"> Add Task </button></div>
+      <div class="buttons"><button type = "submit" class = "addTask"> Add Task </button>
+      </div>
     </form>
   </dialog>
 </body>

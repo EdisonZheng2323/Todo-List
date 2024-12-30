@@ -20,6 +20,8 @@ header, footer {
   padding: 10px;
 }
 
+
+
 header{
   font-size: 3.5rem;
 }
@@ -28,7 +30,7 @@ header{
   background-color: white;
   display: flex;
   flex-direction: row;
-  height: 100%;
+  flex: 1;
 }
 
 .sidebar{
@@ -39,6 +41,7 @@ header{
   background-color: lightgray;
   text-align: left;
   padding: 20px;
+  height: 100%;
 }
 
 button {
@@ -113,6 +116,7 @@ form{
 .addTaskButton {
   background-color: white;
   display: flex;
+  margin-bottom: 10px;
 }
 
 .dialog2 input {
@@ -121,5 +125,32 @@ form{
 
 #submitTask {
   display: flex;
-  background-color: whi;
+}
+
+.taskForm .buttons {
+  padding-top: 15px;
+}
+
+.newTask {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.title {
+  padding-right: 10px;
+}
+
+
+
+.expand, .delete {
+  margin-right: 5px;
+}
+
+.expand, .delete, .edit {
+  padding: 10px 15px 10px 15px;
 }
