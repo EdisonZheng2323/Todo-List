@@ -3,7 +3,7 @@ import todo from './todo.js';
 import { saveProjectsToLocalStorage, loadProjectsFromLocalStorage, getItem, saveCurrentProjectToLocalStorage, getCurrentProject } from "./storage.js";
 import project from './project.js';
 import projectArray from './projectArray.js';
-j
+
 
 function addProject(){
   const add = document.querySelector(".add");
